@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Device Dispenser Map - Tears of the Kingdom</title>
+        <style>
+            @media only screen and (min-width:950px) {
+                #container {
+                    display: flex;
+                }
+            }
+
+            #items-title {
+                text-align: center;
+            }
+
+            #info {
+                width: 150px;
+                margin-left: 10px;
+            }
+
+            body {
+                font-family: Helvetica;
+            }
+
+            #title {
+                font-weight: bold;
+                font-size: larger;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img id="map" src="map2.png" hidden>
+            <img id="dispenser_img" src="dispenser2.png" hidden>
+
+            <span id="title">The Legend of Zelda Tears of the Kingdom Device Dispenser Map</span>
+            <hr>
+            <input id="search" type="search" placeholder="Search filter...">
+            <span>&ThickSpace;Use commas to seperate queries. Example: "wing, fan, cart" Hover over a dispenser to see its contents. This map doesn't include dispensers on the surface and in the depths.</span>
+            <hr>
+            <div id="container">
+                <canvas id="c" width="776px" height="600px"></canvas>
+                <div id="info">
+                    <p id="items-title" hidden>Dispenser Contents</p>
+                    <ul id="items"></ul>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
